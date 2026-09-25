@@ -1,0 +1,85 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "JSONPlaceholder",
+        "version": "1.0.0",
+        "description": "Public fake REST API for testing and prototyping"
+    },
+    "servers": [{
+        "url": "https://jsonplaceholder.typicode.com"
+    }],
+    "paths": {
+        "/posts": {
+            "get": {
+                "summary": "Get posts"
+            },
+            "post": {
+                "summary": "Create post"
+            }
+        },
+        "/posts/{id}": {
+            "get": {
+                "summary": "Get post"
+            },
+            "put": {
+                "summary": "Update post"
+            },
+            "patch": {
+                "summary": "Patch post"
+            },
+            "delete": {
+                "summary": "Delete post"
+            }
+        },
+        "/comments": {
+            "get": {
+                "summary": "Get comments"
+            }
+        },
+        "/comments/{id}": {
+            "get": {
+                "summary": "Get comment"
+            }
+        },
+        "/albums": {
+            "get": {
+                "summary": "Get albums"
+            }
+        },
+        "/albums/{id}": {
+            "get": {
+                "summary": "Get album"
+            }
+        },
+        "/photos": {
+            "get": {
+                "summary": "Get photos"
+            }
+        },
+        "/photos/{id}": {
+            "get": {
+                "summary": "Get photo"
+            }
+        },
+        "/todos": {
+            "get": {
+                "summary": "Get todos"
+            }
+        },
+        "/todos/{id}": {
+            "get": {
+                "summary": "Get todo"
+            }
+        },
+        "/users": {
+            "get": {
+                "summary": "Get users"
+            }
+        },
+        "/users/{id}": {
+            "get": {
+                "summary": "Get user"
+            }
+        }
+    }
+}

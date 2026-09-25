@@ -1,0 +1,57 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "SentinelAPI Demo API",
+        "version": "1.0.0"
+    },
+    "servers": [{
+        "url": "http://localhost:5000"
+    }],
+    "paths": {
+        "/users/{id}": {
+            "get": {
+                "summary": "Get user",
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "integer"
+                    }
+                }]
+            }
+        },
+
+        "/orders/{id}": {
+            "get": {
+                "summary": "Get order",
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "integer"
+                    }
+                }]
+            }
+        },
+
+        "/profile": {
+            "get": {
+                "summary": "Get profile"
+            }
+        },
+
+        "/admin/users": {
+            "get": {
+                "summary": "Get all users"
+            }
+        },
+
+        "/login": {
+            "post": {
+                "summary": "Login"
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "sentinelapi-demo-api",
+    "version": "1.0.0",
+    "description": "Intentionally vulnerable API for SentinelAPI testing",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^5.1.0"
+    }
+}
