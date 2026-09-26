@@ -11,7 +11,7 @@ const groq = new Groq({
     apiKey: process.env.GROQ_API_KEY
 });
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 app.use(cors());
 app.use(express.json());
@@ -250,10 +250,9 @@ Return JSON with exactly these fields:
     }
 
     const python = spawn(
-        "py",
+        process.env.PYTHON || "python3",
         scannerArgs, {
-            cwd: scannerDir,
-            windowsHide: true
+            cwd: scannerDir
         }
     );
 
@@ -437,7 +436,7 @@ app.get("/api/report", (req, res) => {
 |--------------------------------------------------------------------------
 */
 
-n(PORT, () => {
+app.listen(PORT, () => {
 
     console.log(
         `SentinelAPI backend running on http://localhost:${PORT}`
