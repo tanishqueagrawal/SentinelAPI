@@ -24,13 +24,13 @@ import {
   Zap
 } from "lucide-react";
 
-const API_BACKEND = "http://localhost:4000";
+const API_BACKEND = "https://sentinelapi-backend-2aoi.onrender.com";
 
 const TARGETS = [
   {
     id: "sandbox",
     name: "SentinelAPI Sandbox",
-    url: "http://localhost:5000",
+    url: "https://sentinelapi-backend-2aoi.onrender.com",
     mode: "Active",
     status: "Controlled"
   },
